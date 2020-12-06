@@ -20,7 +20,7 @@ const options = {
       domain: process.env.AUTH0_DOMAIN
     })
   ],
-  database: process.env.DATABASE_URL,
+  database: process.env.MONGO_URL,
 }
 
 export default (req, res) => NextAuth(req, res, options)
